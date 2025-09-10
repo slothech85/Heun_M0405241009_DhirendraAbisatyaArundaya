@@ -14,27 +14,34 @@
     <a href="index.html" class="logo">Biodata Dhirendra</a>
     <div class="header-right">
       <a href="#home" id="tombol-home">Home</a>
-      <a href="#about">About</a>
+      <a href="#about" id="tombol-about">About</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
 
   <div class="home-box meluncur" id="home">
-    <img src="foto_diri.jpg" alt="satya" width="300" height="500">
+    <img src="foto_diri.jpg" alt="satya" width="300" height="500" title="foto saya">
     <div class="info">
-      <p>NAMA: Dhirendra Abisatya Arundaya</p>
-      <p>NIM: M0405241009</p>
-      <p>PROGRAM STUDI: Artificial Intelligence</p>
-      <p>PROXY: Heun</p>
-      <p>HOBI: Rebahan sama tidur</p>
-      <p>KENDARAAN: Skuter</p>
+      <p><b>NAMA:</b> Dhirendra Abisatya Arundaya</p>
+      <p><b>NIM:</b> M0405241009</p>
+      <p><b>PROGRAM STUDI:</b> Artificial Intelligence</p>
+      <p><b>PROXY:</b> Heun</p>
+      <p><b>HOBI:</b> Rebahan sama tidur</p>
+      <p>
+        <b>KENDARAAN:</b>
+        <a href="https://www.tokopedia.com/search?st=&q=skuter%20listrik&srp_component_id=02.01.00.00&srp_page_id=&srp_page_title=&navsource=" target="_blank" class="skuter-link">
+          Skuter
+        </a>
+      </p>
     </div>
   </div>
 
   <div class="about-box meluncur" id="about">
     <h2>About Me</h2>
     <div class="about p">
-      <p>Dhirendra Abisatya Arundaya atau yang biasa dipanggil Satya adalah seorang mahasiswa Artificial Intelligence semester 3 di IPB University. </p>
+      <p>Halo! Aku Dhirendra Abisatya Arundaya, tapi kamu bisa panggil aku Satya, Rendra, atau apa pun yang kamu suka. Aku mahasiswa semester 3 di program studi Artificial Intelligence, IPB University. Kalo kamu nanya kenapa aku pilih jurusan AI di IPB, jujur awalnya ini itu rekomendasi dari temen. Sebenarnya aku udah keterima di kampus lain tapi karena menurut aku jurusan AI ini menarik dan cakupannya juga lumayan luas, jadi yaudah gas aja ambil berhubung hobi yang aku punya ga jauh-jauh banget dari gadget.</p>
+      <p>Ngomong-ngomong soal hobi, aku punya banyak. Mulai dari main game, scroll media sosial tanpa tujuan yang jelas, sampai ngedit poster biar keliatan keren padahal cuma buat tugas. Tapi dari semua itu, hobi yang paling aku nikmati adalah... rebahan. Serius. Rebahan sampai ketiduran? Itu bukan males, itu seni, dan jujur aja, kayak anugerah ilahi buat jiwa yang lelah.</p>
+      <p>Dulu, waktu tahun pertama kuliah, aku selalu ke kampus naik skuter kesayangan. Awalnya sih nyaman-nyaman aja, sampai suatu hari kejadian-kejadian nyaris nabrak orang mulai muncul satu per satu. Pernah juga, kalau nggak salah, aku bikin pengendara motor jatuh gara-gara manuver dadakan. Sejak saat itu, trauma kecil mulai muncul, dan sekarang aku lebih sering nebeng temen daripada naik skuter sendiri. Lebih aman, lebih tenang, dan yang penting nggak bikin orang marah di jalan.</p>
     </div>
   </div>
 
@@ -68,7 +75,7 @@
       </a>
 
       <!-- LinkedIn (Simple Icons) -->
-      <a href="https://linkedin.com/in/dhirendra-abisatya-arundaya" target="_blank" title="LinkedIn">
+      <a href="https://www.linkedin.com/in/dhirendra-abisatya-arundaya-03485a320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" title="LinkedIn">
         <svg role="img" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#f7f28b">
           <title>LinkedIn</title>
           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.852 3.372-1.852 3.604 0 4.271 2.372 4.271 5.456v6.287zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.904 20.452H3.771V9h3.133v11.452z"/>
@@ -81,7 +88,12 @@
 
   <div class="" id="">
     <div class="secrt">
-      <p>inisial crush: ANR</p>
+      <p>inisial crush: 
+        <span class="glitch-anr">
+        <span class="glitch-teks">ANR</span>
+        <video src="rusak.mp4" alt="glitch" class="glitch-vid" autoplay loop muted playsinline></video>
+        </span>
+      </p>
     </div>
   </div>
 
@@ -100,6 +112,11 @@
     document.getElementById('tombol-home').addEventListener('click', function(e) {
       e.preventDefault();
       window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    document.getElementById('tombol-about').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 600, behavior: 'smooth' });
     });
     
     function isInViewport(el) {

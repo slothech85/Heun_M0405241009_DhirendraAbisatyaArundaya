@@ -108,7 +108,8 @@ body {
 /* Info text */
 .info p {
   display: flex;
-  flex-direction: column; /* dari kiri-kanan jadi atas-bawah */
+  flex-direction: row; /* dari kiri-kanan jadi atas-bawah */
+  gap: 8px;
   margin: 8px 0;
   font-size: 25px;
   text-align: left;
@@ -120,6 +121,15 @@ body {
   margin: 8px 0;
   font-size: 18px;
   text-align: center;
+}
+
+.skuter-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 /* Contact box */
@@ -162,6 +172,12 @@ html {
   color: white;               /* text color */
 }
 
+.about-box p {
+  text-align: justify;
+  text-indent: 32px;
+  margin-bottom: 16px;
+}
+
 .secrt {
   display: flex;
   align-items: left;
@@ -177,4 +193,27 @@ html {
 .meluncur.visible {
   opacity: 1;
   transform: translateX(0);
+}
+
+.glitch-anr {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-teks {
+  position: relative;
+  z-index: 1;
+  font-size: 2px;
+}
+
+.glitch-vid {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px; /* sesuaikan ukuran */
+  height: 3px;
+  object-fit: cover;
+  opacity: 0.95;
+  z-index: 2; /* lebih tinggi dari text */
+  pointer-events: none;
 }
