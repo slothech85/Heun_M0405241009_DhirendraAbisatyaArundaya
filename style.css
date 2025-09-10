@@ -84,6 +84,70 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  body {
+    padding-top: 60px;
+    font-size: 16px;
+    background-position: center center;
+  }
+  .header {
+    padding: 10px 5px;
+    font-size: 16px;
+  }
+  .header a {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .header a.logo {
+    font-size: 18px;
+  }
+  .header-right {
+    margin-right: 0;
+  }
+  .home-box {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    max-width: 98vw;
+    margin: 20px auto;
+  }
+  .profile-img,
+  .home-box img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
+  .info p {
+    font-size: 18px;
+    gap: 6px;
+    margin: 6px 0;
+  }
+  .about-box {
+    padding: 12px;
+    max-width: 98vw;
+    margin: 20px auto;
+  }
+  .about-box p {
+    font-size: 15px;
+    text-indent: 18px;
+  }
+  .contact-box {
+    flex-direction: column;
+    padding: 12px;
+    max-width: 98vw;
+    margin: 20px auto;
+  }
+  .social-links a {
+    font-size: 15px;
+    margin-bottom: 8px;
+    gap: 6px;
+  }
+  .skuter-link {
+    font-size: 18px;
+    gap: 4px;
+  }
+}
+
 /* Content box */
 .home-box {
   display: flex;              /* enable side-by-side layout */
