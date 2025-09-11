@@ -88,7 +88,10 @@ body {
   body {
     padding-top: 60px;
     font-size: 16px;
-    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    background-size: cover !important;
   }
   .header {
     padding: 10px 5px;
@@ -118,7 +121,9 @@ body {
     height: auto;
   }
   .info p {
+    display: block;
     font-size: 18px;
+    text-align: left;
     gap: 6px;
     margin: 6px 0;
   }
@@ -171,7 +176,7 @@ body {
 
 /* Info text */
 .info p {
-  display: flex;
+  display: block;
   flex-direction: row; /* dari kiri-kanan jadi atas-bawah */
   gap: 8px;
   margin: 8px 0;
